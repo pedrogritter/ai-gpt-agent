@@ -1,0 +1,64 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "what is my name?",
+      "id": "bd80859c-cd9f-4b41-9c50-0b5761c2657a",
+      "createdAt": "2024-11-05T17:40:01.921Z"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry, but I don't have access to personal information about users unless it has been shared with me in the course of our conversation. If you'd like, you can tell me your name!",
+      "id": "f30a762d-a5f4-4754-9120-667de2f44c37",
+      "createdAt": "2024-11-05T17:40:02.824Z"
+    },
+    {
+      "role": "user",
+      "content": "My name is Scott",
+      "id": "a884ba5b-8ec3-482a-bd6c-18babe76ec05",
+      "createdAt": "2024-11-05T17:40:28.739Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Nice to meet you, Scott! How can I assist you today?",
+      "id": "70a9b0ae-a6ec-4523-a4dd-81ce5c27e080",
+      "createdAt": "2024-11-05T17:40:29.361Z"
+    },
+    {
+      "role": "user",
+      "content": "What do you got to say about our previous conversations",
+      "id": "ba9f8e0e-cdc2-421a-bce2-924ced735127",
+      "createdAt": "2024-11-08T03:14:23.984Z"
+    },
+    {
+      "role": "user",
+      "content": "What do you got to say about our previous messages",
+      "id": "99d9e97c-a2c6-4269-a71d-c9ac5cdd87b0",
+      "createdAt": "2024-11-08T03:14:39.588Z"
+    },
+    {
+      "role": "user",
+      "content": "What do you got to say about our previous messages",
+      "id": "666b2def-7185-48c1-8c3c-19f26109ac52",
+      "createdAt": "2024-11-08T03:16:25.253Z"
+    },
+    {
+      "role": "assistant",
+      "content": "In our previous messages, you introduced yourself as Scott and asked about your name. If there's anything specific you'd like to discuss or any questions you have, feel free to let me know!",
+      "id": "e379875f-7317-4051-abcc-b02a316fe4ce",
+      "createdAt": "2024-11-08T03:16:26.436Z"
+    },
+    {
+      "role": "user",
+      "content": "Did you repeat yourself??",
+      "id": "969809ff-08e8-42f6-8215-b38facbb3a73",
+      "createdAt": "2024-11-08T03:16:46.013Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I did repeat some information in my responses. I apologize for that. If there's something specific you'd like to discuss or if you have any questions, please let me know, and I'll do my best to provide a more helpful response!",
+      "id": "1a89c40f-7d5f-4a2f-ac13-2be1f0042aab",
+      "createdAt": "2024-11-08T03:16:47.686Z"
+    }
+  ]
+}
