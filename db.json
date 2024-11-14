@@ -2,63 +2,89 @@
   "messages": [
     {
       "role": "user",
-      "content": "what is my name?",
-      "id": "bd80859c-cd9f-4b41-9c50-0b5761c2657a",
-      "createdAt": "2024-11-05T17:40:01.921Z"
+      "content": "how is the weather?",
+      "id": "f35201c0-9209-4983-837b-5bc28c26c272",
+      "createdAt": "2024-11-14T13:43:58.129Z"
     },
     {
       "role": "assistant",
-      "content": "I'm sorry, but I don't have access to personal information about users unless it has been shared with me in the course of our conversation. If you'd like, you can tell me your name!",
-      "id": "f30a762d-a5f4-4754-9120-667de2f44c37",
-      "createdAt": "2024-11-05T17:40:02.824Z"
+      "content": "Could you please specify the location for which you would like to know the weather?",
+      "refusal": null,
+      "id": "5f5d9715-5687-4034-be39-952af2bde3c8",
+      "createdAt": "2024-11-14T13:43:59.269Z"
     },
     {
       "role": "user",
-      "content": "My name is Scott",
-      "id": "a884ba5b-8ec3-482a-bd6c-18babe76ec05",
-      "createdAt": "2024-11-05T17:40:28.739Z"
+      "content": "PT",
+      "id": "76ee436f-5366-4d8f-8024-138a9788c610",
+      "createdAt": "2024-11-14T13:44:03.937Z"
     },
     {
       "role": "assistant",
-      "content": "Nice to meet you, Scott! How can I assist you today?",
-      "id": "70a9b0ae-a6ec-4523-a4dd-81ce5c27e080",
-      "createdAt": "2024-11-05T17:40:29.361Z"
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_d7Lc3nTTToVFKHMVRkn6dc3d",
+          "type": "function",
+          "function": {
+            "name": "get_weather",
+            "arguments": "{\"reasoning\":\"User requested the weather for PT, which I assume refers to Portugal.\"}"
+          }
+        }
+      ],
+      "refusal": null,
+      "id": "8aa9f6a2-5624-443c-9899-bac23177e144",
+      "createdAt": "2024-11-14T13:44:05.188Z"
+    },
+    {
+      "role": "tool",
+      "content": "Its chilly, about 5c",
+      "tool_call_id": "call_d7Lc3nTTToVFKHMVRkn6dc3d",
+      "id": "d79c8c40-2cb5-4ee4-9757-8e6ddcb1d089",
+      "createdAt": "2024-11-14T13:44:05.189Z"
     },
     {
       "role": "user",
-      "content": "What do you got to say about our previous conversations",
-      "id": "ba9f8e0e-cdc2-421a-bce2-924ced735127",
-      "createdAt": "2024-11-08T03:14:23.984Z"
-    },
-    {
-      "role": "user",
-      "content": "What do you got to say about our previous messages",
-      "id": "99d9e97c-a2c6-4269-a71d-c9ac5cdd87b0",
-      "createdAt": "2024-11-08T03:14:39.588Z"
-    },
-    {
-      "role": "user",
-      "content": "What do you got to say about our previous messages",
-      "id": "666b2def-7185-48c1-8c3c-19f26109ac52",
-      "createdAt": "2024-11-08T03:16:25.253Z"
+      "content": "what was the weather again?",
+      "id": "43318863-aa9f-4261-b1ae-f221d53fcdbc",
+      "createdAt": "2024-11-14T14:04:30.922Z"
     },
     {
       "role": "assistant",
-      "content": "In our previous messages, you introduced yourself as Scott and asked about your name. If there's anything specific you'd like to discuss or any questions you have, feel free to let me know!",
-      "id": "e379875f-7317-4051-abcc-b02a316fe4ce",
-      "createdAt": "2024-11-08T03:16:26.436Z"
+      "content": "The weather in Portugal is chilly, with a temperature of about 5°C.",
+      "refusal": null,
+      "id": "9811829c-4d96-4bca-800d-7a5a0b70b1db",
+      "createdAt": "2024-11-14T14:04:33.396Z"
     },
     {
       "role": "user",
-      "content": "Did you repeat yourself??",
-      "id": "969809ff-08e8-42f6-8215-b38facbb3a73",
-      "createdAt": "2024-11-08T03:16:46.013Z"
+      "content": "Tell me what the weather is right now",
+      "id": "bdf743cb-437c-4ed3-8276-3b1410577142",
+      "createdAt": "2024-11-14T14:04:50.616Z"
     },
     {
       "role": "assistant",
-      "content": "Yes, I did repeat some information in my responses. I apologize for that. If there's something specific you'd like to discuss or if you have any questions, please let me know, and I'll do my best to provide a more helpful response!",
-      "id": "1a89c40f-7d5f-4a2f-ac13-2be1f0042aab",
-      "createdAt": "2024-11-08T03:16:47.686Z"
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_iizEHa7dF9dtYoqWTIsnzjm0",
+          "type": "function",
+          "function": {
+            "name": "get_weather",
+            "arguments": "{\"reasoning\":\"User is asking for the current weather conditions.\"}"
+          }
+        }
+      ],
+      "refusal": null,
+      "id": "64317afc-06a2-49f5-b9f9-6f5fff30ee7c",
+      "createdAt": "2024-11-14T14:04:51.726Z"
+    },
+    {
+      "role": "tool",
+      "content": "Its chilly, about 5c",
+      "tool_call_id": "call_iizEHa7dF9dtYoqWTIsnzjm0",
+      "id": "e646cb74-199e-4ec6-8754-34b229543b96",
+      "createdAt": "2024-11-14T14:04:51.726Z"
     }
   ]
 }
