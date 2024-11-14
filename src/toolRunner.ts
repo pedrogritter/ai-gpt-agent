@@ -1,7 +1,10 @@
-import { Chat } from "./../node_modules/openai/src/resources/chat/chat";
 import type OpenAI from "openai";
-
-const getWeather = () => `Its chilly, about 5c`;
+import {
+  generateImage,
+  generateImageToolDefinition,
+} from "./tools/generateImage";
+import { reddit, redditToolDefinition } from "./tools/reddit";
+import { dadJoke, dadJokeDefinition } from "./tools/dadJoke";
 
 export const runTool = async (
   toolCall: OpenAI.Chat.Completions.ChatCompletionMessageToolCall,
@@ -13,9 +16,13 @@ export const runTool = async (
   };
 
   switch (toolCall.function.name) {
-    case "get_weather":
-      return getWeather();
+    case generateImageToolDefinition.name:
+      return generateImage(input);
+    case redditToolDefinition.name:
+      return reddit(input);
+    case dadJokeDefinition.name:
+      return dadJoke(input);
     default:
-      throw new Error(`Unknown tool: ${toolCall.function.name}`);
+      throw new Error(`Never run this tool again: ${toolCall.function.name}`);
   }
 };

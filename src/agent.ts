@@ -39,9 +39,5 @@ export const runAgent = async ({
       await saveToolResponse(toolResponse, toolCall.id);
       console.log(`Tool finished executing: ${toolCall.function.name} `);
     }
-
-    // console.log("Done...");
-
-    // return getMessages();
   }
 };
